@@ -12,7 +12,7 @@ import './styles/css/styles.css';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/it-company">
         <Navbar/>
         <Routes>
           <Route path="/" exact element={<Home/>} />
