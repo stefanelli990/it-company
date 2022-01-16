@@ -1,0 +1,64 @@
+.btn {
+    width: 170px;  
+    background: transparent;
+    padding: 16px 24px;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: $border-radius;
+  
+  
+    &--outline-white {
+      border: 1px solid $color-white;
+      color: white;
+      &:hover {
+        color: $color-white;
+      }
+    }
+    &--outline-blue {
+      border: 1px solid $color-primary;
+      color: $color-primary;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+    &--small {
+      padding: 8px 8px;
+      width: 140px;
+    }
+  }
+  
+  .btn-arrow {
+    position: relative;
+    transition: background-color 300ms ease-out;
+  }
+  .btn-arrow span {
+    font-size: 1rem;
+    display: inline-block;
+    position: relative;
+    transition: all 300ms ease-out;
+    will-change: transform;
+  }
+  .btn-arrow:hover span {
+            transform: translate3d(-0.8rem, 0, 0);
+  }
+  .btn-arrow svg {
+    position: absolute;
+    width: 1rem;
+    right: 0rem;
+    opacity: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 300ms ease-out;
+    will-change: right, opacity;
+  }
+  .btn-arrow svg * {
+    stroke-width: 4;
+  }
+  .btn-arrow:hover svg {
+    opacity: 1;
+    right: -1.5rem;
+  }

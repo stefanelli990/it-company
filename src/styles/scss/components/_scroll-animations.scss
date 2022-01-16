@@ -1,0 +1,40 @@
+.scroll-container {
+    width: 24px;
+    height: 55px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    position: relative;
+  }
+
+.scroller{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 11px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 40px;
+    animation: scroller 1500ms ease-out infinite;
+  }
+  
+  @keyframes scroller{
+    0%{
+      bottom: 40px;
+      top: 11px;
+    }
+  
+    32%{    
+      bottom: 11px;
+      top: 40px;
+    }
+    66%{
+        top: 40px;
+        bottom: 11px;
+    }
+    100%{
+        bottom: 40px;
+        top: 11px;
+    }
+  }

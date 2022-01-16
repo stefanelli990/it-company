@@ -1,0 +1,32 @@
+.home {
+
+    .hero-section {
+        position: relative;
+        min-height: 100vh;
+        .container {
+            @include container(100px 12px, 1200px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .hero-text {
+            color: $color-white;
+            max-width: 600px;
+          
+        }
+        h1 {
+            font-size: 40px;
+            @include md {
+                font-size: 72px;
+            }
+        } 
+        .scroll-container {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 50%;
+           
+        }
+    }
+    
+}
