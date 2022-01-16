@@ -1,5 +1,6 @@
 {
   "name": "it-company",
+  "homepage": "https://github.com/stefanelli990/it-company.git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
