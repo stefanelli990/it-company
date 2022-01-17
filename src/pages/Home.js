@@ -1,5 +1,9 @@
 import React from 'react';
 import heroImg from '../assets/images/hero-img.jpg';
+import bgImg from '../assets/images/bg-image.jpg';
+import productDesignImg from '../assets/images/product-design.svg';
+import webDevelopmentImg from '../assets/images/web-development.svg';
+import mobileDevelopmentImg from '../assets/images/mobile-development.svg';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -7,7 +11,7 @@ function Home() {
     return (
         <div className='home'>
 
-
+            {/* hero */}
             <section className="hero-section" style={{
                 backgroundImage: `linear-gradient(rgba(9, 82, 134, 0.9),rgba(9, 82, 134, 0.9)), url(${heroImg})`,
                 backgroundRepeat: 'no-repeat',
@@ -29,6 +33,66 @@ function Home() {
                     <div class="scroll-container">
                         <div class="scroller"></div>
                     </div>
+            </section>
+
+            {/* services */}
+            <section className="services-section">
+                <div className="container">
+                    <div className="section-title">
+                        <h1>What we do</h1>
+                    </div>
+                    <div className="grid">
+                    <div className="item">
+                        <img src={ productDesignImg } alt="" />
+                        <h4>Product design</h4>
+                        <p>Need a human-centric design to ensure your app is engaging and interactive? We can make it happen.</p>
+                    </div>
+                    <div className="item">
+                        <img src={ webDevelopmentImg } alt="" />
+                        <h4>Web development</h4>
+                        <p>Be it a responsive, secure website, or ecommerce site, or maybe saas application, we have experts that do it all.</p>
+                    </div>
+                    <div className="item">
+                        <img src={ mobileDevelopmentImg } alt="" />
+                        <h4>Mobile development</h4>
+                        <p>Our skilled team can develop native/hybrid mobile apps to help you turn your ideas into reality.</p>
+                    </div>
+                    </div>
+                    <Link to='/services'>
+                            <button className="btn btn--outline-blue btn-arrow">
+                                <span>Learn more<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 36.1 25.8" enableBackground="new 0 0 36.1 25.8"><g><line fill="none" stroke="#31A0EB" strokeWidth="3" strokeMiterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#31A0EB" strokeWidth="3" strokeMiterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7"></polyline></g></svg></span>
+                            </button>
+                        </Link>
+                </div>
+            </section>
+
+            {/* counter */}
+            <section className="section-counter" style={{
+                backgroundImage: `linear-gradient(rgba(9, 82, 134, 0.9),rgba(9, 82, 134, 0.9)), url(${bgImg})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+            }}>
+                <div className="container">
+                    <div className="grid">
+                        <div className="item">
+                            <h1>100+</h1>
+                            <h4>Happy clients</h4>
+                        </div>
+                        <div className="item">
+                            <h1>100+</h1>
+                            <h4>Happy clients</h4>
+                        </div>
+                        <div className="item">
+                            <h1>100+</h1>
+                            <h4>Happy clients</h4>
+                        </div>
+                        <div className="item">
+                            <h1>100+</h1>
+                            <h4>Happy clients</h4>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     )
