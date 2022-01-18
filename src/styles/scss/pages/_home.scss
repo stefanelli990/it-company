@@ -37,7 +37,6 @@
             @include lg {
                 grid-template-columns: 1fr 1fr 1fr;
             }
-            
             gap: 24px;
             margin-bottom: 3.75rem;
         }
@@ -77,6 +76,84 @@
             h4 {
                 margin-bottom: 0;
             }
+        }
+    }
+
+    // our projects
+    .our-projects {
+        .container {
+            @include container(100px 12px, 1200px);
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            @include lg {
+                grid-template-columns: 1fr 1fr;
+            }
+            gap: 24px;
+            margin-bottom: 3.75rem;
+        }
+        .project-item {
+            position: relative;
+            border-radius: $border-radius;
+            overflow: hidden;
+            &:hover .overlay {
+                opacity: 1;
+            }
+            &:hover img {
+                transform: scale(1.2,1.2);
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: $transition;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $overlay-color;
+            opacity: 0;
+            transition: $transition;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: $color-white;
+
+            h5 {
+                margin-bottom: 8px;
+            }
+        }
+    }
+    
+    // stages
+    .stages {
+        background-color: $color-gray;
+        .container {
+            @include container(100px 12px, 1200px);
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            @include lg {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            gap: 24px;
+        }
+        .stages-item {
+            padding: 24px;
+        }
+        img {
+            width: 65px;
+            height: 65px;
+            margin-bottom: 1rem;
         }
     }
 }
