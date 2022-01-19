@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 12px;
+    min-height: 500px;
+    color: $color-white;
+    p {
+        max-width: 650px;
+    }
+}

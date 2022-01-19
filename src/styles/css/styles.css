@@ -319,6 +319,15 @@ p {
   margin-bottom: 1rem;
 }
 
+.home .contact-section .container {
+  padding: 100px 12px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
 .navbar {
   position: absolute;
   top: 0;
@@ -500,5 +509,29 @@ p {
     bottom: 40px;
     top: 11px;
   }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 12px;
+  min-height: 500px;
+  color: #fff;
+}
+
+.header p {
+  max-width: 650px;
 }
 /*# sourceMappingURL=styles.css.map */

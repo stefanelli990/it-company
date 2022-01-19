@@ -156,4 +156,13 @@
             margin-bottom: 1rem;
         }
     }
+
+    // contact section
+    .contact-section {
+        .container {
+            @include container(100px 12px, 1200px);
+            text-align: center;
+            color: $color-white;
+        }
+    }
 }
