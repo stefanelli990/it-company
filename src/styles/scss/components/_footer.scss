@@ -1,0 +1,27 @@
+footer {
+    background-color: $color-primary-dark;
+    color: $color-white;
+    .footer-top {
+        .container {
+            @include container(100px 12px, 1200px)
+        }
+    }
+    .social-networks {
+        display: flex;
+        a {
+            height: 48px;
+            width: 48px;
+            display: inline-block;
+            border-radius: 50%;
+            background-color: lighten($color-primary-dark, 5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.5rem;
+        }
+        img {
+            height: 24px;
+            width: 24px;
+        }
+    }
+}

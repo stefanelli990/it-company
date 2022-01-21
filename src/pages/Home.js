@@ -11,6 +11,7 @@ import development from '../assets/icons/development.svg';
 import testing from '../assets/icons/testing.svg';
 import deployment from '../assets/icons/deployment.svg';
 import maintenance from '../assets/icons/maintenance.svg';
+import blogPostImg from '../assets/images/blogpost-img.jpg';
 
 import { Link } from 'react-router-dom';
 
@@ -219,11 +220,37 @@ function Home() {
             </section>
 
             {/* blog section */}
-            <section className="contact-section">
+            {/* odraditi mapiranje */}
+            <section className="blogs-section">
                 <div className="container">
+                <div className="section-title">
+                        <h1>Our latest blogs</h1>
+                    </div>
                     <div className="grid">
                         <div className="blog-item">
-                            <img src="" alt="" />
+                            <img src={blogPostImg} alt="" />
+                            <div className="blog-desc">
+                                <h5>August 2, 2019</h5>
+                                <h3>New blog</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam...</p>
+                                <Link to='/new-blog'>
+                                    Read more
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="blog-item">
+                            <img src={blogPostImg} alt="" />
+                            <div className="blog-desc">
+                                <h5>August 2, 2019</h5>
+                                <h3>New blog</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam...</p>
+                                <Link to='/new-blog'>
+                                    Read more
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="blog-item">
+                            <img src={blogPostImg} alt="" />
                             <div className="blog-desc">
                                 <h5>August 2, 2019</h5>
                                 <h3>New blog</h3>

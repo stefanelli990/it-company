@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Footer from "./components/Footer";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
@@ -22,7 +23,9 @@ function App() {
           <Route path="/blogs" exact element={<Blogs/>} />
           <Route path="/contact" exact element={<Contact/>} />
         </Routes>
+        <Footer/>
       </Router>
+      
     </div>
   );
 }

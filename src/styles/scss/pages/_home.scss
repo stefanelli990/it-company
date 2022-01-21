@@ -134,7 +134,7 @@
     
     // stages
     .stages {
-        background-color: $color-gray;
+        background-color: $color-light-gray;
         .container {
             @include container(100px 12px, 1200px);
             text-align: center;
@@ -163,6 +163,48 @@
             @include container(100px 12px, 1200px);
             text-align: center;
             color: $color-white;
+        }
+    }
+
+    // blogs section 
+    .blogs-section {
+        .container {
+            @include container(100px 12px, 1200px);
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                @include lg {
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+                gap: 24px;
+                margin-bottom: 3.75rem;
+            }
+            .blog-item {
+                border-radius: $border-radius;
+                overflow: hidden;
+                box-shadow: 1px 1px 20px rgba(171, 204, 226, 0.25);
+                img {
+                    height: 400px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .blog-desc {
+                padding: 24px;
+                h5 {
+                    color: $color-gray;
+                    margin-bottom: 8px;
+                }
+                p {
+                    margin-bottom: 1rem;
+                }
+                a {
+                    color: $color-primary;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
     }
 }

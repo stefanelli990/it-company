@@ -328,6 +328,64 @@ p {
   color: #fff;
 }
 
+.home .blogs-section .container {
+  padding: 100px 12px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home .blogs-section .container .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 3.75rem;
+}
+
+@media (min-width: 992px) {
+  .home .blogs-section .container .grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.home .blogs-section .container .blog-item {
+  border-radius: 30px;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 1px 20px rgba(171, 204, 226, 0.25);
+          box-shadow: 1px 1px 20px rgba(171, 204, 226, 0.25);
+}
+
+.home .blogs-section .container .blog-item img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home .blogs-section .container .blog-desc {
+  padding: 24px;
+}
+
+.home .blogs-section .container .blog-desc h5 {
+  color: #AFAFAF;
+  margin-bottom: 8px;
+}
+
+.home .blogs-section .container .blog-desc p {
+  margin-bottom: 1rem;
+}
+
+.home .blogs-section .container .blog-desc a {
+  color: #31A0EB;
+}
+
+.home .blogs-section .container .blog-desc a:hover {
+  text-decoration: underline;
+}
+
 .navbar {
   position: absolute;
   top: 0;
@@ -533,5 +591,46 @@ p {
 
 .header p {
   max-width: 650px;
+}
+
+footer {
+  background-color: #073A5F;
+  color: #fff;
+}
+
+footer .footer-top .container {
+  padding: 100px 12px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer .social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .social-networks a {
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #094977;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.5rem;
+}
+
+footer .social-networks img {
+  height: 24px;
+  width: 24px;
 }
 /*# sourceMappingURL=styles.css.map */
