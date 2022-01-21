@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -49,6 +49,31 @@ li {
   margin-bottom: 3.75rem;
 }
 
+.container {
+  padding: 100px 12px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 h1, h2, h3, h4, h5 {
   margin-bottom: 1rem;
   line-height: 1.3;
@@ -93,10 +118,6 @@ p {
 }
 
 .home .hero-section .container {
-  padding: 100px 12px;
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,21 +152,13 @@ p {
   left: 50%;
 }
 
-.home .services-section .container {
-  padding: 100px 12px;
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .home .services-section .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  text-align: center;
   gap: 24px;
-  margin-bottom: 3.75rem;
 }
 
 @media (min-width: 992px) {
@@ -156,7 +169,7 @@ p {
 }
 
 .home .services-section .item {
-  padding: 24px;
+  padding: 40px 24px;
   -webkit-box-shadow: 1px 1px 20px rgba(171, 204, 226, 0.25);
           box-shadow: 1px 1px 20px rgba(171, 204, 226, 0.25);
   border-radius: 30px;
@@ -261,8 +274,8 @@ p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .home .our-projects .overlay {
@@ -273,8 +286,8 @@ p {
   height: 100%;
   background-color: rgba(0, 56, 95, 0.9);
   opacity: 0;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,6 +382,7 @@ p {
   overflow: hidden;
   -webkit-box-shadow: 1px 1px 20px rgba(171, 204, 226, 0.25);
           box-shadow: 1px 1px 20px rgba(171, 204, 226, 0.25);
+  cursor: pointer;
 }
 
 .home .blogs-section .container .blog-item img {
@@ -409,7 +423,7 @@ p {
 
 .navbar .container {
   padding: 24px 12px;
-  max-width: 1400px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -440,81 +454,35 @@ p {
 }
 
 .btn {
-  width: 170px;
-  background: transparent;
-  padding: 16px 24px;
+  padding: 12px 24px;
   cursor: pointer;
   outline: none;
-  vertical-align: middle;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
   border-radius: 30px;
+  font-size: 1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.btn--outline-white {
-  border: 1px solid #fff;
-  color: white;
-}
-
-.btn--outline-white:hover {
+.btn--filled {
+  border: 1px solid #31A0EB;
+  background-color: #31A0EB;
   color: #fff;
 }
 
-.btn--outline-blue {
+.btn--filled:hover {
+  background-color: transparent;
+  color: #31A0EB;
+}
+
+.btn--outlined {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn--outlined:hover {
+  background-color: #31A0EB;
   border: 1px solid #31A0EB;
-  color: #31A0EB;
-}
-
-.btn--outline-blue:hover {
-  color: #31A0EB;
-}
-
-.btn--small {
-  padding: 16px 24px;
-  width: 160px;
-}
-
-.btn-arrow {
-  position: relative;
-  -webkit-transition: background-color 300ms ease-out;
-  transition: background-color 300ms ease-out;
-}
-
-.btn-arrow span {
-  font-size: 1rem;
-  display: inline-block;
-  position: relative;
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-  will-change: transform;
-}
-
-.btn-arrow:hover span {
-  -webkit-transform: translate3d(-0.8rem, 0, 0);
-          transform: translate3d(-0.8rem, 0, 0);
-}
-
-.btn-arrow svg {
-  position: absolute;
-  width: 1rem;
-  right: 0rem;
-  opacity: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-  will-change: right, opacity;
-}
-
-.btn-arrow svg * {
-  stroke-width: 4;
-}
-
-.btn-arrow:hover svg {
-  opacity: 1;
-  right: -1.5rem;
 }
 
 .scroll-container {
@@ -605,6 +573,7 @@ p {
 footer {
   background-color: #073A5F;
   color: #fff;
+  font-weight: 300;
 }
 
 footer .footer-top .container {
@@ -614,13 +583,39 @@ footer .footer-top .container {
   margin: 0 auto;
 }
 
-footer .social-networks {
+footer .footer-top .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  footer .footer-top .grid {
+    -ms-grid-columns: 300px auto;
+        grid-template-columns: 300px auto;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .footer-top .grid {
+    -ms-grid-columns: 300px auto auto auto;
+        grid-template-columns: 300px auto auto auto;
+  }
+}
+
+footer .footer-top .grid li {
+  margin-bottom: 8px;
+}
+
+footer .footer-top .social-networks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .social-networks a {
+footer .footer-top .social-networks a {
   height: 48px;
   width: 48px;
   display: inline-block;
@@ -638,8 +633,31 @@ footer .social-networks a {
   margin-right: 0.5rem;
 }
 
-footer .social-networks img {
+footer .footer-top .social-networks img {
   height: 24px;
   width: 24px;
+}
+
+footer .footer-bottom .container {
+  padding: 24px 12px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-bottom .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-bottom .container ul li {
+  margin-left: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -83,6 +83,15 @@ function Footer() {
                     </div>
                 </div> 
             </div>
+            <div className="footer-bottom">
+                <div className="container">
+                    <div>© 2022. ITCompany. all rights reserved.</div>
+                    <ul>
+                        <li>Terms & contitions</li>
+                        <li>Privacy policy</li>
+                    </ul>
+                </div>
+            </div>
          </footer>;
 }
 

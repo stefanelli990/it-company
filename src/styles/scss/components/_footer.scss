@@ -1,27 +1,60 @@
 footer {
     background-color: $color-primary-dark;
     color: $color-white;
+    font-weight: 300;
     .footer-top {
         .container {
             @include container(100px 12px, 1200px)
         }
-    }
-    .social-networks {
-        display: flex;
-        a {
-            height: 48px;
-            width: 48px;
-            display: inline-block;
-            border-radius: 50%;
-            background-color: lighten($color-primary-dark, 5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 0.5rem;
+        .grid {
+            display: grid;
+            grid-template-columns: auto;
+            
+            gap: 24px; 
+            
+            @include md {
+                grid-template-columns: 300px auto;
+            }
+            @include lg {
+                grid-template-columns: 300px auto auto auto;
+               
+            }
+            li {
+                margin-bottom: 8px;
+            }
         }
-        img {
-            height: 24px;
-            width: 24px;
+        .social-networks {
+            display: flex;
+            a {
+                height: 48px;
+                width: 48px;
+                display: inline-block;
+                border-radius: 50%;
+                background-color: lighten($color-primary-dark, 5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 0.5rem;
+            }
+            img {
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+    .footer-bottom {
+        .container {
+            @include container(24px 12px, 1200px);
+            display: flex;
+            justify-content: space-between;
+
+            ul {
+                display: flex;
+                li {
+                    margin-left: 2rem;
+                }
+            }
+            
         }
     }
 }

@@ -33,9 +33,7 @@ function Home() {
                         <p>We are team of exceptional IT professionals that will help you to boost your business performance.</p>
                         <br />
                         <Link to='/about'>
-                            <button className="btn btn--outline-white btn-arrow">
-                                <span>Learn more<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 36.1 25.8" enableBackground="new 0 0 36.1 25.8"><g><line fill="none" stroke="#FFFFFF" strokeWidth="3" strokeMiterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" strokeWidth="3" strokeMiterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7"></polyline></g></svg></span>
-                            </button>
+                            <button className="btn btn--outlined">Get started</button>
                         </Link>
                     </div>
                 </div>
@@ -56,9 +54,7 @@ function Home() {
                         <h4>Product design</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore cum molestiae, quam quibusdam vero corporis?</p>
                         <Link to='/services'>
-                            <button className="btn btn--outline-blue btn--small btn-arrow">
-                                <span>Learn more<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 36.1 25.8" enableBackground="new 0 0 36.1 25.8"><g><line fill="none" stroke="#31A0EB" strokeWidth="3" strokeMiterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#31A0EB" strokeWidth="3" strokeMiterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7"></polyline></g></svg></span>
-                            </button>
+                            <button className="btn btn--filled">Learn more</button>
                     </Link>
                     </div>
                     <div className="item">
@@ -66,9 +62,7 @@ function Home() {
                         <h4>Web development</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore cum molestiae, quam quibusdam vero corporis?</p>
                         <Link to='/services'>
-                            <button className="btn btn--outline-blue btn--small btn-arrow">
-                                <span>Learn more<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 36.1 25.8" enableBackground="new 0 0 36.1 25.8"><g><line fill="none" stroke="#31A0EB" strokeWidth="3" strokeMiterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#31A0EB" strokeWidth="3" strokeMiterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7"></polyline></g></svg></span>
-                            </button>
+                            <button className="btn btn--filled">Learn more</button>
                     </Link>
                     </div>
                     <div className="item">
@@ -76,9 +70,7 @@ function Home() {
                         <h4>Mobile development</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore cum molestiae, quam quibusdam vero corporis?</p>
                         <Link to='/services'>
-                            <button className="btn btn--outline-blue btn--small btn-arrow">
-                                <span>Learn more<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 36.1 25.8" enableBackground="new 0 0 36.1 25.8"><g><line fill="none" stroke="#31A0EB" strokeWidth="3" strokeMiterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#31A0EB" strokeWidth="3" strokeMiterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7"></polyline></g></svg></span>
-                            </button>
+                            <button className="btn btn--filled">Learn more</button>
                     </Link>
                     </div>
                     </div>
