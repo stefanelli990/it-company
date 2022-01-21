@@ -42,11 +42,16 @@
         }
         .item {
             padding: 24px;
+            box-shadow: $box-shadow;
+            border-radius: $border-radius;
         }
         img {
             width: 65px;
             height: 65px;
             margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1.5rem;
         }
     }
     .section-counter {
@@ -182,7 +187,7 @@
             .blog-item {
                 border-radius: $border-radius;
                 overflow: hidden;
-                box-shadow: 1px 1px 20px rgba(171, 204, 226, 0.25);
+                box-shadow: $box-shadow;
                 img {
                     height: 400px;
                     width: 100%;
@@ -191,7 +196,7 @@
             }
             .blog-desc {
                 padding: 24px;
-                h5 {
+                h6 {
                     color: $color-gray;
                     margin-bottom: 8px;
                 }

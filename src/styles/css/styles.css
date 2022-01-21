@@ -75,6 +75,12 @@ h4 {
 
 h5 {
   font-weight: 400;
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 p {
@@ -151,12 +157,19 @@ p {
 
 .home .services-section .item {
   padding: 24px;
+  -webkit-box-shadow: 1px 1px 20px rgba(171, 204, 226, 0.25);
+          box-shadow: 1px 1px 20px rgba(171, 204, 226, 0.25);
+  border-radius: 30px;
 }
 
 .home .services-section img {
   width: 65px;
   height: 65px;
   margin-bottom: 1rem;
+}
+
+.home .services-section p {
+  margin-bottom: 1.5rem;
 }
 
 .home .section-counter .container {
@@ -369,7 +382,7 @@ p {
   padding: 24px;
 }
 
-.home .blogs-section .container .blog-desc h5 {
+.home .blogs-section .container .blog-desc h6 {
   color: #AFAFAF;
   margin-bottom: 8px;
 }
@@ -458,12 +471,8 @@ p {
 }
 
 .btn--small {
-  padding: 12px 18px;
-  width: 145px;
-}
-
-.btn--small span {
-  font-size: 0.85rem !important;
+  padding: 16px 24px;
+  width: 160px;
 }
 
 .btn-arrow {

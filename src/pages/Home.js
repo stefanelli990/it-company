@@ -55,23 +55,34 @@ function Home() {
                         <img src={ productDesignImg } alt="" />
                         <h4>Product design</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore cum molestiae, quam quibusdam vero corporis?</p>
+                        <Link to='/services'>
+                            <button className="btn btn--outline-blue btn--small btn-arrow">
+                                <span>Learn more<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 36.1 25.8" enableBackground="new 0 0 36.1 25.8"><g><line fill="none" stroke="#31A0EB" strokeWidth="3" strokeMiterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#31A0EB" strokeWidth="3" strokeMiterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7"></polyline></g></svg></span>
+                            </button>
+                    </Link>
                     </div>
                     <div className="item">
                         <img src={ webDevelopmentImg } alt="" />
                         <h4>Web development</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore cum molestiae, quam quibusdam vero corporis?</p>
+                        <Link to='/services'>
+                            <button className="btn btn--outline-blue btn--small btn-arrow">
+                                <span>Learn more<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 36.1 25.8" enableBackground="new 0 0 36.1 25.8"><g><line fill="none" stroke="#31A0EB" strokeWidth="3" strokeMiterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#31A0EB" strokeWidth="3" strokeMiterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7"></polyline></g></svg></span>
+                            </button>
+                    </Link>
                     </div>
                     <div className="item">
                         <img src={ mobileDevelopmentImg } alt="" />
                         <h4>Mobile development</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore cum molestiae, quam quibusdam vero corporis?</p>
-                    </div>
-                    </div>
-                    <Link to='/services'>
-                            <button className="btn btn--outline-blue btn-arrow">
+                        <Link to='/services'>
+                            <button className="btn btn--outline-blue btn--small btn-arrow">
                                 <span>Learn more<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 36.1 25.8" enableBackground="new 0 0 36.1 25.8"><g><line fill="none" stroke="#31A0EB" strokeWidth="3" strokeMiterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#31A0EB" strokeWidth="3" strokeMiterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7"></polyline></g></svg></span>
                             </button>
                     </Link>
+                    </div>
+                    </div>
+                    
                 </div>
             </section>
 
@@ -230,7 +241,7 @@ function Home() {
                         <div className="blog-item">
                             <img src={blogPostImg} alt="" />
                             <div className="blog-desc">
-                                <h5>August 2, 2019</h5>
+                                <h6>August 2, 2019</h6>
                                 <h3>New blog</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam...</p>
                                 <Link to='/new-blog'>
@@ -241,7 +252,7 @@ function Home() {
                         <div className="blog-item">
                             <img src={blogPostImg} alt="" />
                             <div className="blog-desc">
-                                <h5>August 2, 2019</h5>
+                                <h6>August 2, 2019</h6>
                                 <h3>New blog</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam...</p>
                                 <Link to='/new-blog'>
@@ -252,7 +263,7 @@ function Home() {
                         <div className="blog-item">
                             <img src={blogPostImg} alt="" />
                             <div className="blog-desc">
-                                <h5>August 2, 2019</h5>
+                                <h6>August 2, 2019</h6>
                                 <h3>New blog</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam...</p>
                                 <Link to='/new-blog'>
