@@ -28,8 +28,8 @@ function Footer() {
                             <a href="https://github.com"  rel="noopener"><img src={instagramIcon} alt="" /></a>
                         </div>
                     </div>
-                    <div>
-                        <h4>Quick links</h4>
+                    <div className='navigation'>
+                        <h4>Navigation</h4>
                         <ul className='footer-links'>
                             <li className='footer-links-item'>
                                 <Link to='/'>Home</Link>
@@ -51,32 +51,32 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <h4>Services</h4>
+                    <div className='support'>
+                        <h4>Support</h4>
                         <ul className='footer-links'>
                             <li className='footer-links-item'>
-                                <Link to='/'>Product design</Link>
+                                <Link to='/'>Terms & contitions</Link>
                             </li>
                             <li className='footer-links-item'>
-                                <Link to='/services'>Web development</Link>
+                                <Link to='/services'>Privacy policy</Link>
                             </li>
                             <li className='footer-links-item'>
-                                <Link to='/projects'>Mobile development</Link>
+                                <Link to='/projects'>FAQ</Link>
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className='contact-info'>
                         <h4>Contact info</h4>
                         <ul className='footer-links'>
                             <li className='footer-links-item'>
-                                <span>4140 Parker Rd. Allentown,</span><br />
-                                <span>New Mexico 31134</span>
+                                <span>198 West 21th Street,</span><br />
+                                <span>Suite 721 New York NY 10016</span>
                             </li>
                             <li className='footer-links-item'>
-                                felicia.reid@example.com
+                                + 1235 2355 98
                             </li>
                             <li className='footer-links-item'>
-                                (480) 555-0103
+                                info@yoursite.com
                             </li>
                         </ul>
                     </div>
@@ -85,11 +85,7 @@ function Footer() {
             </div>
             <div className="footer-bottom">
                 <div className="container">
-                    <div>© 2022. ITCompany. all rights reserved.</div>
-                    <ul>
-                        <li>Terms & contitions</li>
-                        <li>Privacy policy</li>
-                    </ul>
+                    © 2022. ITCompany. all rights reserved.
                 </div>
             </div>
          </footer>;

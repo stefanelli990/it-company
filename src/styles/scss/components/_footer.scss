@@ -3,13 +3,10 @@ footer {
     color: $color-white;
     font-weight: 300;
     .footer-top {
-        .container {
-            @include container(100px 12px, 1200px)
-        }
         .grid {
             display: grid;
             grid-template-columns: auto;
-            
+            justify-content: space-between;
             gap: 24px; 
             
             @include md {
@@ -35,26 +32,22 @@ footer {
                 justify-content: center;
                 align-items: center;
                 margin-right: 0.5rem;
+                transition: $transition;
+                &:hover {
+                    background-color: lighten($color-primary-dark, 10);
+                }
             }
             img {
                 height: 24px;
                 width: 24px;
             }
         }
+        
     }
     .footer-bottom {
         .container {
             @include container(24px 12px, 1200px);
-            display: flex;
-            justify-content: space-between;
-
-            ul {
-                display: flex;
-                li {
-                    margin-left: 2rem;
-                }
-            }
-            
+            text-align: center;
         }
     }
 }

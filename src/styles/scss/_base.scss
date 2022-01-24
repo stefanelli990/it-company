@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 0.9rem;
+    @include sm {
+        font-size: 1rem;
+    }
+}
+
 a {
     text-decoration: none;
     color: $color-white;

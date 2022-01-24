@@ -7,6 +7,12 @@
     padding: 12px;
     min-height: 500px;
     color: $color-white;
+    h1 {
+        font-weight: 700;
+        @include md {
+            font-size: 4rem;
+        }
+    } 
     p {
         max-width: 650px;
     }
