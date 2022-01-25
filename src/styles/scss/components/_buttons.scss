@@ -3,14 +3,11 @@
     padding: 12px 24px;
     cursor: pointer;
     outline: none;
-    border-radius: $border-radius;
+    border-radius: 30px;
     font-size: 1rem;
     transition: $transition;
     min-width: 150px;
-    width: 100%;
-    @include sm {
-      width: auto;
-    }
+    
 
     &--filled {
       border: 1px solid $color-primary;

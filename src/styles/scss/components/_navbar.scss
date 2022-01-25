@@ -5,7 +5,7 @@
     right: 0;
     z-index: 900;
     .container {
-        @include container(24px 12px, 1200px);
+        @include container(32px 24px, 1200px);
         display: flex;
         justify-content: space-between;
         align-items: center;
