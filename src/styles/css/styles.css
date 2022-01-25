@@ -101,17 +101,17 @@ h2 {
 
 h3 {
   font-size: 1.75rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h4 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h5 {
-  font-weight: 400;
   font-size: 1.25rem;
+  font-weight: 600;
 }
 
 h6 {
@@ -407,6 +407,10 @@ p {
   margin-bottom: 1rem;
 }
 
+.home .stages .stages-icon svg {
+  height: 56px;
+}
+
 .home .contact-section .container {
   padding: 100px 12px;
   max-width: 1200px;
@@ -445,7 +449,7 @@ p {
 }
 
 .home .blogs-section .container .blog-item img {
-  height: 400px;
+  height: 300px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
