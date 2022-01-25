@@ -5,8 +5,11 @@
     flex-direction: column;
     text-align: center;
     padding: 12px;
-    min-height: 500px;
+    min-height: 400px;
     color: $color-white;
+    @include md {
+        min-height: 500px; 
+    }
     h1 {
         font-weight: 700;
         @include md {
