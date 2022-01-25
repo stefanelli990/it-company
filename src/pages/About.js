@@ -10,14 +10,14 @@ function About() {
             <div className="container">
             <div className="row">
                 <div className="text">
-                        <h1>Our mission</h1>
+                        <h2>Our mission</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis.</p>
                     </div>
                     <img src={aboutImg1} alt="" />
                 </div>
                 <div className="row">
                     <div className="text">
-                        <h1>Our vision</h1>
+                        <h2>Our vision</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis.</p>
                     </div>
                     <img src={aboutImg1} alt="" />
