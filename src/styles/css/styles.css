@@ -56,7 +56,13 @@ li {
 
 .section-title {
   text-align: center;
-  margin-bottom: 3.75rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    margin-bottom: 4rem;
+  }
 }
 
 .container {
@@ -185,8 +191,14 @@ p {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  margin-bottom: 3.75rem;
   gap: 24px;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .home .services-section .grid {
+    margin-bottom: 4rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -419,10 +431,6 @@ p {
 }
 
 .home .contact-section .container {
-  padding: 100px 12px;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
   text-align: center;
   color: #fff;
 }
