@@ -12,21 +12,21 @@ function Services() {
                 <div className="container">
                     <div className="row">
                         <div className="text">
-                            <h1>Beautifully designed apps from scratch</h1>
+                            <h2>Beautifully designed apps from scratch</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis.</p>
                         </div>
                         <img src={servicesImg1} alt="" />
                     </div>
                     <div className="row">
                         <div className="text">
-                            <h1>Custom website and web app development </h1>
+                            <h2>Custom website and web app development </h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis.</p>
                         </div>
                         <img src={servicesImg2} alt="" />
                     </div>
                     <div className="row">
                         <div className="text">
-                            <h1>Cross-platform mobile app development</h1>
+                            <h2>Cross-platform mobile app development</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis.</p>
                         </div>
                         <img src={servicesImg3} alt="" />

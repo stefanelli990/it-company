@@ -147,21 +147,24 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .home .hero-section .container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
 }
 
 .home .hero-section .hero-text {
   color: #fff;
   max-width: 600px;
-}
-
-.home .hero-section .hero-buttons .btn {
-  margin-right: 0.5rem;
-}
-
-@media (min-width: 600px) {
-  .home .hero-section .hero-buttons .btn {
-    margin-right: 1rem;
-  }
 }
 
 .home .hero-section h1 {

@@ -22,14 +22,9 @@ function Home() {
                         <h1>Turn your ideas into reality</h1>
                         <p>We are team of exceptional IT professionals that will help you to boost your business performance.</p>
                         <br />
-                        <div className="hero-buttons">
                             <Link to='/contact'>
                                 <button className="btn btn--filled">Get started</button>
                             </Link>
-                            <Link to='/about'>
-                                <button className="btn btn--outlined-white">Learn More</button>
-                            </Link>
-                        </div>
                     </div>
                 </div>
                     <div className="scroll-container">
