@@ -5,6 +5,8 @@ import instagramIcon from '../assets/icons/instagram-icon.svg';
 import { Link } from 'react-router-dom';
 
 function Footer() {
+  const year = new Date();
+
   return <footer>
             <div className="footer-top">
                 <div className="container">
@@ -29,7 +31,7 @@ function Footer() {
                         </div>
                     </div>
                     <div className='navigation'>
-                        <h4>Navigation</h4>
+                        <h5>Navigation</h5>
                         <ul className='footer-links'>
                             <li className='footer-links-item'>
                                 <Link to='/'>Home</Link>
@@ -52,7 +54,7 @@ function Footer() {
                         </ul>
                     </div>
                     <div className='support'>
-                        <h4>Support</h4>
+                        <h5>Support</h5>
                         <ul className='footer-links'>
                             <li className='footer-links-item'>
                                 <Link to='/'>Terms & contitions</Link>
@@ -66,7 +68,7 @@ function Footer() {
                         </ul>
                     </div>
                     <div className='contact-info'>
-                        <h4>Contact info</h4>
+                        <h5>Contact info</h5>
                         <ul className='footer-links'>
                             <li className='footer-links-item'>
                                 <span>198 West 21th Street,</span><br />
@@ -85,7 +87,7 @@ function Footer() {
             </div>
             <div className="footer-bottom">
                 <div className="container">
-                    © 2022. ITCompany. all rights reserved.
+                    <p>Copyright &copy; {year.getFullYear()}. All rights reserved.</p>
                 </div>
             </div>
          </footer>;

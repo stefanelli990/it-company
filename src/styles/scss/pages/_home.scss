@@ -16,7 +16,10 @@
 
         .hero-buttons {
             .btn {
-                margin-right: 1rem;
+                margin-right: 0.5rem;
+                @include sm {
+                    margin-right: 1rem; 
+                }
             }
         }
         h1 {

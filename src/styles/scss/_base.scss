@@ -50,12 +50,13 @@ li {
 }
 
 .container {
-    padding: 100px 24px;
+    padding: 50px 24px;
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
     @include md {
         max-width: 768px;
+        padding: 100px 24px;
     }
     @include lg {
         max-width: 992px;
