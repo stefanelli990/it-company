@@ -41,6 +41,17 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
 }
 
 .logo h4 {
@@ -508,7 +519,17 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+
+.services .row:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .services .row {
+    margin-bottom: 100px;
+  }
 }
 
 .services .row .text {
@@ -580,7 +601,17 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+
+.projects .row:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .projects .row {
+    margin-bottom: 100px;
+  }
 }
 
 .projects .row .text {
@@ -599,7 +630,7 @@ p {
 
 .projects .row .text h5 {
   color: #1693E9;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -660,7 +691,17 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+
+.about .row:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .about .row {
+    margin-bottom: 100px;
+  }
 }
 
 .about .row .text {
@@ -1150,6 +1191,13 @@ footer {
   background-color: #073A5F;
   color: #fff;
   font-weight: 300;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer {
+    text-align: left;
+  }
 }
 
 footer .footer-top .grid {
@@ -1185,6 +1233,17 @@ footer .footer-top .social-networks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) {
+  footer .footer-top .social-networks {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
 }
 
 footer .footer-top .social-networks a {

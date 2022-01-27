@@ -2,6 +2,10 @@ footer {
     background-color: $color-primary-dark;
     color: $color-white;
     font-weight: 300;
+    text-align: center;
+    @include md {
+        text-align: left;
+    }
     .footer-top {
         .grid {
             display: grid;
@@ -22,6 +26,10 @@ footer {
         }
         .social-networks {
             display: flex;
+            justify-content: center;
+            @include md {
+                justify-content: start;
+            }
             a {
                 height: 48px;
                 width: 48px;

@@ -5,7 +5,13 @@
         gap: 24px;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        @include md {
+            margin-bottom: 100px;
+        }
         
         .text {
             grid-column: 1/13;
