@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from '../components/Header';
 
+
 function Contact() {
     return (
         <div className='contact'>
             <Header heading="Contact" paragraph="Don’t let your questions hanging. To inquire about how we can incorporate deep technology solutions into your business please fill in the form below" />
-            <form action="">
+            <form>
                 <div className="container"> 
                         <div className="grid">
                             <div className="input-name">
@@ -22,7 +23,7 @@ function Contact() {
                             </div>
                             <div className="select">
                                 <label htmlFor="budget">Select your budget range</label>
-                                    <select id="budget" name="budget">
+                                    <select id="budget" name="budget" >
                                     <option value="australia">Less than $5k</option>
                                     <option value="canada">Between $5k to $25k</option>
                                     <option value="usa">Between $25k to $50k</option>

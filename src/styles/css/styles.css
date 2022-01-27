@@ -915,6 +915,12 @@ p {
   margin-top: 8px;
 }
 
+.contact form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .contact form label {
   color: #2e2e2e;
 }
@@ -962,8 +968,8 @@ p {
 }
 
 .contact .contact-info .circle {
-  width: 150px;
-  height: 150px;
+  width: 70px;
+  height: 70px;
   background-color: rgba(22, 147, 233, 0.05);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -979,7 +985,7 @@ p {
 }
 
 .contact .contact-info svg {
-  height: 75px;
+  height: 35px;
   width: auto;
 }
 
