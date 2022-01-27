@@ -12,7 +12,7 @@ function Projects() {
                     <div className="row">
                         <div className="text">
                             <h5>website</h5>
-                            <h1>CoinView</h1>
+                            <h2>CoinView</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis.</p>
                             <br />
                             <Link to='/contact'>
@@ -24,7 +24,7 @@ function Projects() {
                     <div className="row">
                         <div className="text">
                             <h5>website</h5>
-                            <h1>CoinView</h1>
+                            <h2>CoinView</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis.</p>
                             <br />
                             <Link to='/contact'>
@@ -36,7 +36,7 @@ function Projects() {
                     <div className="row">
                         <div className="text">
                             <h5>website</h5>
-                            <h1>CoinView</h1>
+                            <h2>CoinView</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis.</p>
                             <br />
                             <Link to='/contact'>
@@ -48,7 +48,7 @@ function Projects() {
                     <div className="row">
                         <div className="text">
                             <h5>website</h5>
-                            <h1>CoinView</h1>
+                            <h2>CoinView</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis.</p>
                             <br />
                             <Link to='/contact'>
