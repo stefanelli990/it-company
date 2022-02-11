@@ -31,5 +31,28 @@
     .nav-links-item {
         margin-left: 24px;
     }
+    .hamburger-menu {
+        padding: 24px;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: $color-primary;
+        transition: $transition;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        li {
+            color: $color-white;
+            margin: 26px 0;
+            font-size: 1.5rem;
+        }
+        &.active {
+            left: 0;
+        }
+    }
+    
     
 }

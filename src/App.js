@@ -8,12 +8,14 @@ import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './styles/css/styles.css';
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop/>
         <Navbar/>
         <Routes>
           <Route path="/" exact element={<Home/>} />

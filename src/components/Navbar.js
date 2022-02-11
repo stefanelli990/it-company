@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 
 
 function Navbar() {
+
+    const [sidebar, setSidebar] = useState(false);
+    const showHamburger = () => setSidebar(!sidebar);
     return (
             <nav className='navbar'>
                 <div className="container">
@@ -35,7 +38,30 @@ function Navbar() {
                             <Link to='/contact'>Contact</Link>
                         </li>
                     </ul>
+                    <button className='toggle' onClick={showHamburger}>Toggle</button>
                 </div>
+               
+                    <ul  className={sidebar ? 'hamburger-menu active' : 'hamburger-menu'}>
+                        <li className='hamburger-links'>
+                            <Link to='/'>Home</Link>
+                        </li>
+                        <li className='hamburger-links'>
+                            <Link to='/services'>Services</Link>
+                        </li>
+                        <li className='hamburger-links'>
+                            <Link to='/projects'>Projects</Link>
+                        </li>
+                        <li className='hamburger-links'>
+                            <Link to='/about'>About</Link>
+                        </li>
+                        <li className='hamburger-links'>
+                            <Link to='/blogs'>Blogs</Link>
+                        </li>
+                        <li className='hamburger-links'>
+                            <Link to='/contact'>Contact</Link>
+                        </li>
+                    </ul>
+               
             </nav>
     )
 }

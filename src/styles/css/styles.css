@@ -1047,6 +1047,41 @@ p {
   margin-left: 24px;
 }
 
+.navbar .hamburger-menu {
+  padding: 24px;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100vh;
+  background-color: #1693E9;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar .hamburger-menu li {
+  color: #fff;
+  margin: 26px 0;
+  font-size: 1.5rem;
+}
+
+.navbar .hamburger-menu.active {
+  left: 0;
+}
+
 .btn {
   padding: 12px 24px;
   cursor: pointer;
