@@ -1,11 +1,16 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 function Navbar() {
 
     const [sidebar, setSidebar] = useState(false);
     const showHamburger = () => setSidebar(!sidebar);
+
+    sidebar ? disableBodyScroll(document) : enableBodyScroll(document);
+
     return (
             <nav className='navbar'>
                 <div className="container">
@@ -23,7 +28,7 @@ function Navbar() {
                             <Link to='/'>Home</Link>
                         </li>
                         <li className='nav-links-item'>
-                            <Link to='/services'>Services</Link>
+                            <Link  to='/services'>Services</Link>
                         </li>
                         <li className='nav-links-item'>
                             <Link to='/projects'>Projects</Link>
@@ -38,27 +43,36 @@ function Navbar() {
                             <Link to='/contact'>Contact</Link>
                         </li>
                     </ul>
-                    <button className='toggle' onClick={showHamburger}>Toggle</button>
+                    <button className='toggle' onClick={showHamburger}>
+                        <MenuIcon  style={{ fontSize: 40 }}/>
+                    </button>
                 </div>
                
-                    <ul  className={sidebar ? 'hamburger-menu active' : 'hamburger-menu'}>
+                    <ul  className={sidebar ? 'hamburger-menu active disableBodyScroll(document)' : 'hamburger-menu'}>
+                    <button className='toggle' onClick={showHamburger}>
+                        <CloseIcon style={{ fontSize: 40,
+                                            position: 'absolute',
+                                            top: 16,
+                                            right: 16
+                                            }}/>
+                    </button>
                         <li className='hamburger-links'>
-                            <Link to='/'>Home</Link>
+                            <Link onClick={showHamburger} to='/'>Home</Link>
                         </li>
                         <li className='hamburger-links'>
-                            <Link to='/services'>Services</Link>
+                            <Link onClick={showHamburger} to='/services'>Services</Link>
                         </li>
                         <li className='hamburger-links'>
-                            <Link to='/projects'>Projects</Link>
+                            <Link onClick={showHamburger} to='/projects'>Projects</Link>
                         </li>
                         <li className='hamburger-links'>
-                            <Link to='/about'>About</Link>
+                            <Link onClick={showHamburger} to='/about'>About</Link>
                         </li>
                         <li className='hamburger-links'>
-                            <Link to='/blogs'>Blogs</Link>
+                            <Link onClick={showHamburger} to='/blogs'>Blogs</Link>
                         </li>
                         <li className='hamburger-links'>
-                            <Link to='/contact'>Contact</Link>
+                            <Link onClick={showHamburger} to='/contact'>Contact</Link>
                         </li>
                     </ul>
                
