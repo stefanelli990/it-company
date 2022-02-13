@@ -189,16 +189,6 @@
             border: 1px solid $border-color;
             background-color: transparent;
             border-radius: $border-radius;
-            transition: $transition;
-            &:hover {
-                color: $color-white;
-                border: 1px solid $color-primary;
-                background-color: $color-primary;
-                path {
-                    transition: $transition;
-                    fill: $color-white;
-                }
-            }
         }
         .stages-icon {
             margin-bottom: 1rem;

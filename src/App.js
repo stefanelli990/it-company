@@ -6,18 +6,21 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './styles/css/styles.css';
 import ScrollToTop from "./components/ScrollToTop";
-
+import {BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
+
+  const location = useLocation();
   return (
     <div className="App">
-      <Router>
+     
         <ScrollToTop/>
         <Navbar/>
-        <Routes>
+        <AnimatePresence exitBeforeEnter>
+        <Routes location={location} key={location.key}>
           <Route path="/" exact element={<Home/>} />
           <Route path="/services" exact element={<Services/>} />
           <Route path="/projects" exact element={<Projects/>} />
@@ -25,8 +28,10 @@ function App() {
           <Route path="/blogs" exact element={<Blogs/>} />
           <Route path="/contact" exact element={<Contact/>} />
         </Routes>
+        
+        </AnimatePresence>
         <Footer/>
-      </Router>
+   
       
     </div>
   );

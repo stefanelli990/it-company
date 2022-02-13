@@ -17,6 +17,10 @@ html {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -420,26 +424,12 @@ p {
   border: 1px solid #EAEAEA;
   background-color: transparent;
   border-radius: 15px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 @media (min-width: 768px) {
   .home .stages .stages-item {
     text-align: left;
   }
-}
-
-.home .stages .stages-item:hover {
-  color: #fff;
-  border: 1px solid #1693E9;
-  background-color: #1693E9;
-}
-
-.home .stages .stages-item:hover path {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  fill: #fff;
 }
 
 .home .stages .stages-icon {
@@ -1220,7 +1210,7 @@ p {
   }
 }
 
-.header {
+.header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1241,22 +1231,22 @@ p {
 }
 
 @media (min-width: 768px) {
-  .header {
+  .header .container {
     min-height: 500px;
   }
 }
 
-.header h1 {
+.header .container h1 {
   font-weight: 700;
 }
 
 @media (min-width: 768px) {
-  .header h1 {
+  .header .container h1 {
     font-size: 4rem;
   }
 }
 
-.header p {
+.header .container p {
   max-width: 650px;
 }
 

@@ -1,22 +1,25 @@
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 24px;
-    min-height: 400px;
-    color: $color-white;
-    @include md {
-        min-height: 500px; 
-    }
-    h1 {
-        font-weight: 700;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+        min-height: 400px;
+        color: $color-white;
         @include md {
-            font-size: 4rem;
+            min-height: 500px; 
         }
-    } 
-    p {
-        max-width: 650px;
+        h1 {
+            font-weight: 700;
+            @include md {
+                font-size: 4rem;
+            }
+        } 
+        p {
+            max-width: 650px;
+        }
     }
+    
 }

@@ -2,12 +2,41 @@ import React from 'react';
 import Header from '../components/Header';
 import projectImage1 from '../assets/images/project-image1.jpg';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
+const pageVariants = {
+    hidden: {
+        x: "-100px",
+        opacity: 0,
+        width: "100%"
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            
+            duration: 0.5
+        }
+    },
+    exit: {
+        x: "100px",
+        opacity: 0,
+        transition: {
+            ease: 'easeInOut'
+        }
+    }
+}
 
 function Projects() {
     return (
         <div className="projects">
         <Header heading="Projects" paragraph="Our development team is capable of providing applications tailored exactly to your custom requirements."/>
-        <section className="projects-container">
+        <motion.section className="projects-container"
+            variants={pageVariants}
+            initial='hidden'
+            animate='visible'
+            exit='exit'
+        >
                 <div className="container">
                     <div className="row">
                         <div className="text">
@@ -58,7 +87,7 @@ function Projects() {
                         <img src={projectImage1} alt="" />
                     </div>
                 </div>
-        </section>
+        </motion.section>
         </div>
     )
 }

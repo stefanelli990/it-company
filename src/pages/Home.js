@@ -4,6 +4,39 @@ import bgImg from '../assets/images/bg-image.jpg';
 import projectImage1 from '../assets/images/project-image1.jpg';
 import blogPostImg from '../assets/images/blogpost-img.jpg';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
+
+
+const pageVariants = {
+    hidden: {
+        x: "-100px",
+        opacity: 0,
+        
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+      
+        transition: {
+            duration: 0.5
+        }
+    },
+    exit: {
+        x: "100px",
+        opacity: 0,
+    
+        transition: {
+            ease: 'easeInOut'
+        }
+    }
+}
+
+
+
+  
+
+ 
 
 function Home() {
 
@@ -17,7 +50,12 @@ function Home() {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
             }}>
-                <div className="container">
+                <motion.div className="container"
+                    variants={pageVariants}
+                    initial='hidden'
+                    animate='visible'
+                    exit='exit'
+                >
                     <div className="hero-text">
                         <h1>Turn your ideas into reality</h1>
                         <p>We are team of exceptional IT professionals that will help you to boost your business performance.</p>
@@ -26,15 +64,21 @@ function Home() {
                                 <button className="btn btn--filled">Get started</button>
                             </Link>
                     </div>
-                </div>
                     <div className="scroll-container">
                         <div className="scroller"></div>
                     </div>
+                </motion.div>
+                    
             </section>
 
             {/* services */}
             <section className="services-section">
-                <div className="container">
+                <motion.div className="container"
+                    variants={pageVariants}
+                    initial='hidden'
+                    animate='visible'
+                    exit='exit'
+                    >
                     <div className="section-title">
                         <h2>What we do</h2>
                     </div>
@@ -112,7 +156,7 @@ function Home() {
                                 <span>Learn more</span>
                             </button>
                     </Link>
-                </div>
+                </motion.div>
             </section>
 
             {/* counter */}
@@ -122,7 +166,12 @@ function Home() {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
             }}>
-                <div className="container">
+                <motion.div className="container"
+                variants={pageVariants}
+                initial='hidden'
+                animate='visible'
+                exit='exit'
+                >
                     <div className="grid">
                         <div className="item">
                             <h1>100+</h1>
@@ -141,12 +190,17 @@ function Home() {
                             <h4>Happy clients</h4>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </section>
 
             {/* our projects */}
             <section className="our-projects">
-                <div className="container">
+                <motion.div className="container"
+                variants={pageVariants}
+                initial='hidden'
+                animate='visible'
+                exit='exit'
+                >
                     <div className="section-title">
                         <h2>Our projects</h2>
                     </div>
@@ -185,17 +239,22 @@ function Home() {
                                 <span>Learn more</span>
                             </button>
                     </Link>
-                </div>
+                </motion.div>
             </section>
 
             {/* stages */}
             <section className="stages">
-                <div className="container">
+                <motion.div className="container"
+                variants={pageVariants}
+                initial='hidden'
+                animate='visible'
+                exit='exit'
+                >
                     <div className="section-title">
                         <h2>How we work</h2>
                     </div>
-                    <div className="grid">
-                        <div id='stage-1' className="stages-item">
+                    <div className="grid" >
+                        <div className="stages-item">
                             <div className="stages-icon">
                                 <svg viewBox="0 0 78 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_432_123)">
@@ -336,7 +395,7 @@ function Home() {
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore cum molestiae, quam quibusdam vero corporis?</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </section>
 
             {/* contact section */}
@@ -346,19 +405,29 @@ function Home() {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
             }}>
-                <div className="container">
+                <motion.div className="container"
+                variants={pageVariants}
+                initial='hidden'
+                animate='visible'
+                exit='exit'
+                >
                     <h2>Let’s work together</h2>
                     <Link to='/contact'>
                             <button className="btn btn--filled">
                                 <span>Get started</span></button>
                         </Link>
-                </div>
+                </motion.div>
             </section>
 
             {/* blog section */}
             {/* odraditi mapiranje */}
             <section className="blogs-section">
-                <div className="container">
+                <motion.div className="container"
+                variants={pageVariants}
+                initial='hidden'
+                animate='visible'
+                exit='exit'
+                >
                 <div className="section-title">
                         <h2>Our latest blogs</h2>
                     </div>
@@ -401,7 +470,7 @@ function Home() {
                             <button className="btn btn--outlined-primary">
                                 <span>Get started</span></button>
                         </Link>
-                </div>
+                </motion.div>
             </section>
         </div>
     )
